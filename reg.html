@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="site.js"></script>
+    <title></title>
+    <style>
+        *{
+             background-color: #070735;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #070735;/* Black background */
+            color: #fff; /* White text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-block-start: 5%;
+            
+        }
+
+        h1 {
+            font-size:400%;
+        }
+
+        p {
+            font-size:200%;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 20px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333; /* Dark gray input background */
+            color: #fff; /* White text color */
+            padding-block-end: 5%;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db; /* Blue submit button color */
+            color: #fff; /* White text color */
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1e70bf; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    
+        <nav class="navigation">
+            <ul id ="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="FAQ.html">FAQs</a></li>
+                <li><a href="reg.html">Registration</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Syncopation Music Event Registration</h1>
+            <p style="padding-block-start: 5%;">Join us for an exciting musical event at Somerville School, Noida! Fill out the registration form below to reserve your spot.</p>
+    
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <input type="submit" value="Register">
+            </form>
+        </div>
+        </body>
+        </html>

@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #070735;
+   
+}
+
+header {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 550%;
+    color: white;
+    margin-top: 0%;
+    opacity: 0.9;
+    text-align: left;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    color: goldenrod;
+    font-size: 50%;
+    font-weight: bolder;
+    position: absolute;
+    background-color: transparent;
+    
+   
+ 
+    
+}
+
+.navigation li {
+    font: bold 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    padding-left: 5%;
+    overflow-y: hidden;
+    text-align: right;
+    text-transform: uppercase;
+    text-emphasis-color: white;
+}
+
+.navigation li:hover {
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+    text-decoration-thickness: 5px;
+}
+
+.navigation {
+    text-align: right;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 3%;
+    padding-top: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-y: hidden;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    overflow-y: scroll;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#background1 {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30%;
+}
+
+main {
+    padding-block-start: 50%;
+}
+
+#question1 {
+    color: white;
+    text-align: center;
+    font-size: 200%;
+}
+
+#question1:hover {
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+    text-decoration-thickness: 5px;
+    text-decoration-skip: 2px;
+}
+
+
+.heading {
+    position: relative;
+    visibility: hidden;
+    padding-block-start: 5%;
+    padding: 10%;
+    color: blueviolet;
+}
+
+
+
+
+
+.image:hover {
+    opacity: 0.4;
+}
+
+
+
+
+
+#button {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 5px;
+}
+
+#ending {
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    padding: 30%;
+    padding-top: 0%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    background-image: url("https://www.somervillenoida.in/ImageGallery/Full/syncopatio_480_32377.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#footer-content {
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 0%;
+}
+
+#scroll {
+    text-align: center;
+    text-decoration: none;
+}
+
+#about
+{
+    color: white;
+    padding-top: 50%;
+    font-size: 400%;
+    font-style: normal;
+    text-align: center;
+}
+#about:hover
+{
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+   
+}
+#answer
+{
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    padding-block-start: 5%;
+    background-image: url("");
+
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding-block-start: 10%;
+    padding-bottom: 0%;
+}
+
+.image {
+    text-align: center;
+    position: relative;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.2s;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-size: xx-large;
+}
+
+.image:hover .overlay {
+    opacity: 1;
+}
+footer {
+    background-image: url("footer-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+#scroll-to-top{
+    display: inline-block;
+    background-color: #007bff;
+    color: black;
+    
+    text-decoration: none;
+    
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    width: 100%;
+    
+    color: #fff; 
+    text-align: center;
+    padding: 10px;
+    
+    bottom: 0;
+    left: 0;
+    z-index: 9999; 
+    
+}
+
+#scroll-to-top{
+    
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="site.js"></script>
+    <title></title>
+    <style>
+        *{
+              background-color: #070735;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #070735;
+            /* Set background color to black */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+           background-color: #070735;
+            /* Set background color to black */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: left;
+            /* Align the header to the left */
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            text-align: left;
+            /* Align FAQ items to the left */
+            color: #3498db;
+            /* Set FAQ item text color to a deep blue */
+        }
+
+        .question {
+            font-size:200%;
+            cursor: pointer;
+            padding-top: 10%;
+
+        }
+
+        .answer {
+            font-size: 150%;
+            display: none;
+        }
+
+        .question:hover {
+            color: #3498db;
+        }
+
+        .question::after {
+            content: '\25B6';
+            /* Unicode character for a right-pointing triangle */
+            float: right;
+        }
+
+        .opened::after {
+            content: '\25BC';
+            /* Unicode character for a down-pointing triangle */
+        }
+
+        .container {
+            align-items: left;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <nav class="navigation">
+        <ul id="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="FAQ.html">FAQs</a></li>
+            <li><a href="reg.html">Registration</a></li>
+            <li><a href="pictures.html">Pictures</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Syncopation Music Event FAQ</h1>
+
+        <div class="faq-item">
+            <div class="question">How many houses are competing in the event?</div>
+            <div class="answer"> There are four houses competing in the event. The names of the four houses are Mark,
+                Luke, John, and Peter.These houses will be showcasing their musical talents and adding to the excitement
+                of the Syncopation Music Event.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Where is the venue?</div>
+            <div class="answer">The event will take place at Nelson Memorial Auditorium,Sector-22,Somerville school,Noida.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">How can I take part in the event?</div>
+            <div class="answer">
+                You can participate in the event by registering through our website; simply click on the following link to get started.  <a href="reg.html" style="color: red;">Register</a></div>
+        </div>
+
+        <!-- Add more FAQ items as needed -->
+
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('opened');
+                const answer = question.nextElementSibling;
+                if (question.classList.contains('opened')) {
+                    answer.style.display = 'block';
+                } else {
+                    answer.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
